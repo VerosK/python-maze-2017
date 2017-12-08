@@ -14,7 +14,10 @@ místnostech.
 
 ## Aplikace
 
-Aplikace má po spuštění poslouchat na portu 5000/TCP, kde má odpovídat na 
+Výsledkem má být program `main.py`, který bude obsahovat hlavní program. 
+Celá aplikace může obsahovat i další moduly, které si `main.py` naimportuje.
+
+Aplikace má po spuštění poslouchat na portu 5000/TCP, kde bude odpovídat na 
 HTTP požadavky.
 
 * Na požadavek `GET /` má aplikace odpovědět odpovědí `200 OK`. 
@@ -91,30 +94,23 @@ výstup. HTTP odpověď bude přesto 200 OK.
 }
 ```
 
-<!---
-
-## Ukázkové řešení
-
-Ukázkové řešené běží třeba na https://pv248.toaster.cz (HTTPS na 443), 
-Vaše aplikace by ale měla poslouchat na http://localhost:5000/
-
--->
-
 ## Odevzdání
 
-Do odevzdávárny na ISu nahrajte archiv (ZIP, tar.gz) zdrojových kódů 
+Do [odevzdávárny na ISu][final] prosím nahrajte archiv (ZIP, tar.gz) zdrojových kódů 
 aplikace. 
 
 Pro řešení můžete použít libovovolné moduly (třeba pro BFS či 
 Dijstrův algoritmus).  Pokud potřebujete nějaké speciální
-moduly, nezpomeňte je přidat do `requirements.txt`.
+moduly, nezpomeňte je přidat i do `requirements.txt`.
 
 Aplikaci budeme testovat ve virtuálním prostředí s Pythonem 3, před 
-spuštěním se provede 
+spuštěním se provede instalace balíčků pomocí:
 
 ```bash
 pip install -r requirements.txt
 ```   
 
 Pro testy aplikace můžete použít přiložené testy - ty čekají, že 
-aplikace poslouchá na portu 5000. 
+aplikace poslouchá na portu 5000. Pro testování jsou použil `py.test`
+
+[final]: https://is.muni.cz/auth/el/1433/podzim2017/PV248/ode/final/?lang=cs
