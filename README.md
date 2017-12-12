@@ -4,7 +4,7 @@
 **Vytvořte malou  aplikaci (např. ve frameworku Flask), která 
 bude umět hledat nejkratší cesty v bludišti.**
 
-TL;DR: Bludiště je acyklický neorientovaný graf. 
+TL;DR: Bludiště je ~acyklický~ neorientovaný graf.  (Opraveno 12.12.)
 
 Bludiště se skládá z pojmenovaných místností, mezi místnostmi jsou v 
 chodby. Chodbami je možné procházet oběma směry. 
